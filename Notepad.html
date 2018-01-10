@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="src/jQuery.min.js"></script>
+  <script src="src/materialize.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="src/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="src/style.css">
+  <link rel="icon" type="image/ico" href="src/icon.png">
+  <title>NOTEPAD</title>
+</head>
+<body>
+    
+  <div id="NotepadRow" class="row">
+    <div class="col xl4 offset-xl4 l8 offset-l2 m8 offset-m2 s10 offset-s1">
+        
+      <div id="navigation" class="card-panel light-blue accent-2">
+        <div onclick="BackToNotes()" id="BackToNotesBtn"><i id="BackToNotesBtnIcon" class="material-icons">arrow_back</i></div>
+        <div onclick="WriteNote()" id="WriteNoteBtn"><i id="WriteNoteBtnIcon" class="material-icons">add</i></div>
+      </div>
+
+      <div id="NoteListPanel" class="card-panel light-blue accent-2">
+        <div id="NoteList" class="collection">
+          <a class="collection-item"></a>
+        </div>
+      </div>
+
+      <div id="WriteNotePanel" class="card-panel light-blue accent-2">
+        <textarea type="text" id="NoteInput" class="browser-default"></textarea>
+        <button onclick="AddNote();" class="btn waves-effect waves-light grey" style="margin-top:10px;">Add
+          <i class="material-icons right">send</i>
+        </button>
+      </div>
+        
+      <div id="ReadNotePanel" class="card-panel light-blue accent-2">
+        <p id="SpecificNote"></p>
+      </div>
+        
+    </div><!-- col -->
+  </div><!-- row -->
+    
+  <script src="src/app.js"></script>
+</body>
+</html>
