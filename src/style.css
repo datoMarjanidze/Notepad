@@ -1,0 +1,165 @@
+@font-face {
+    font-family: Lato-Light;
+    src: url(Lato-Light.ttf);
+}
+body{
+    font-family:Lato-Light;
+    font-size:18px;
+}
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(icons.woff2) format('woff2');
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+
+#NotepadRow{
+    margin-top:25px;
+}
+#navigation{
+    margin:0px;
+    padding:10px 10px;
+}
+#navigation #BackToNotesBtn{
+    display:none;
+    user-select: none;
+}
+#BackToNotesBtn #BackToNotesBtnIcon{
+    color:#fff;
+    transition:color 0.3s;
+    font-size:27px;
+}
+#BackToNotesBtn #BackToNotesBtnIcon:hover{
+    cursor:pointer;
+    color:#d9d9d9;
+}
+#navigation #WriteNoteBtn{
+    user-select: none;
+}
+#WriteNoteBtn #WriteNoteBtnIcon{
+    color:#fff;
+    transition:color 0.3s;
+    font-size:27px;
+}
+#WriteNoteBtn #WriteNoteBtnIcon:hover{
+    cursor:pointer;
+    color:#d9d9d9;
+}
+
+
+#NoteListPanel{
+    margin:0px;
+    padding:20px 10px;
+}
+#NoteListPanel #NoteList{
+    margin:0px;
+    height:560px;
+    background:#fff;
+    overflow-y:scroll;
+}
+#NoteListPanel .NoteListCollItem{
+    color:grey;
+    user-select: none;
+}
+#NoteListPanel #NoteList::-webkit-scrollbar{
+	width:6px;
+	background-color:#fff;
+}
+#NoteListPanel #NoteList::-webkit-scrollbar-thumb{
+    background:rgba(0,0,0,0.1);
+}
+#NoteListPanel .ReadNoteBtn{
+    float:right;
+    user-select: none;
+}
+#NoteListPanel .ReadNoteBtnIcon{
+	color:rgba(0,0,0,0.5);
+    transition:color 0.3s;
+    font-size:20px;
+}
+#NoteListPanel .ReadNoteBtnIcon:hover{
+    cursor:pointer;
+    color:rgba(0,0,0,0.2);
+}
+#NoteListPanel .DeleteBtn{
+    float:right;
+    user-select: none;
+}
+#NoteListPanel .DeleteBtnIcon{
+    color:rgba(0,0,0,0.5);
+    transition:color 0.3s;
+    font-size:20px;
+}
+#NoteListPanel .DeleteBtnIcon:hover{
+    cursor:pointer;
+    color:rgba(0,0,0,0.2);
+}
+
+
+#WriteNotePanel{
+    margin:0px;
+    padding:20px 10px;
+    display:none;
+    height:560px;
+}
+#WriteNotePanel #NoteInput{
+    resize: none;
+    border:1px solid rgba(0,0,0,0.1);
+    border-radius:3px;
+    background:#fff;
+    outline:none;
+    color:rgba(0,0,0,0.6);
+    padding:5px;
+    height:450px;
+    font-size:18px;
+}
+#WriteNotePanel #NoteInput::-webkit-input-placeholder {
+    color:rgba(0,0,0,0.3);
+    padding-left:0px;
+    font-size:18px;
+}
+#WriteNotePanel #NoteInput::-webkit-scrollbar{
+	width:5px;
+	background-color:transparent;
+}
+#WriteNotePanel #NoteInput::-webkit-scrollbar-thumb{
+    background:rgba(0,0,0,0.1);
+}
+
+
+#ReadNotePanel{
+    margin:0px;
+    padding:10px 10px;
+    height:560px;
+    display:none;
+}
+#ReadNotePanel #SpecificNote{
+    background:#fff;
+    height:93%;
+    padding:5px 0px 0px 10px;
+    word-wrap:break-word;
+    overflow-y:scroll;
+}
+#ReadNotePanel #SpecificNote::-webkit-scrollbar{
+	width:5px;
+	background-color:transparent;
+}
+#ReadNotePanel #SpecificNote::-webkit-scrollbar-thumb{
+    background:rgba(0,0,0,0.1);
+}
